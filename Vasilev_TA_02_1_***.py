@@ -1,0 +1,1 @@
+da poch ne rabotaet
