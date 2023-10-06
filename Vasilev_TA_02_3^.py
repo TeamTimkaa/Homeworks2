@@ -7,7 +7,7 @@ flag = 0
 n_summ = 0
 while flag < 1:
     n = int(input())
-    if 0 <= n <= 100:
+    if 1 <= n <= 100:
         flag += 1
     else:
         print('Введите корректное число')
