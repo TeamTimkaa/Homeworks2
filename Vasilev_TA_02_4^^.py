@@ -19,7 +19,8 @@ while flag == 1:
         if flag_2 == 'y':
             arr = listdir(folder)
             # На этом моменте заметил файл .DS_Store, содержащий (насколько я разобрался) параметры каталога, поэтому нужно убрать его из массива
-            arr.remove('.DS_Store')
+            if '.DS_Store' in arr: 
+                arr.remove('.DS_Store')
             for i in range(len(arr)):
                 a = str(folder) + '/' + arr[i] # Задаём a = пути до каждой папке
                 rename(a, str(i+1))
